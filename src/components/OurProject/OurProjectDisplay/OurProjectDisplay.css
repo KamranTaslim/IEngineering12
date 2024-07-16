@@ -1,0 +1,84 @@
+.project-detail-container {
+  display: flex;
+  justify-content: center; /* Center the container */
+  margin: 40px;
+}
+
+.project-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  width: 100%;
+  max-width: 800px; /* Optional: set a max width for better alignment */
+}
+
+.heading_project {
+  align-self: flex-start;
+}
+
+.project-detail-title {
+  color: #388087;
+  font-size: 2rem;
+  margin: 50px 0px 20px 0px;
+}
+
+.project-detail-img {
+  width: 100%; /* Make the image take full width */
+  max-width: 800px; /* Ensure the image doesn't exceed the max width */
+  height: auto;
+  margin: 20px 0; /* Optional: add some margin for spacing */
+}
+
+.ourprojectDisImage {
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  width: 100%;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.project-detail-description {
+  font-size: 1.2rem;
+  word-spacing: 2px;
+  align-self: flex-start;
+  flex: 3;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.project-extra-details {
+  flex: 1; /* Take up available space */
+}
+
+.project-extra-details h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project-extra-details h5 {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.project-extra-details span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .project-details {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .project-detail-description {
+    margin-right: 0; /* Remove margin on small screens */
+    margin-bottom: 20px; /* Add margin to separate the elements */
+  }
+}
